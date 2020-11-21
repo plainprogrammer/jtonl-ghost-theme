@@ -2,7 +2,9 @@
   "name": "james-thomps-onl",
   "description": "Ghost theme for james.thomps.onl",
   "version": "0.1.0",
-  "keywords": ["ghost-theme"],
+  "keywords": [
+    "ghost-theme"
+  ],
   "engines": {
     "ghost-api": "v3"
   },
@@ -16,14 +18,14 @@
     "image_sizes": {}
   },
   "scripts": {
+    "build": "postcss src/css/screen.css -o assets/css/screen.css",
     "validate": "gscan ./"
   },
-  "dependencies": {
-    "autoprefixer": "^10.0.2",
-    "postcss": "^8.1.8",
-    "tailwindcss": "^2.0.1"
-  },
   "devDependencies": {
-    "gscan": "^3.6.0"
+    "autoprefixer": "^10.0.2",
+    "gscan": "^3.6.0",
+    "postcss": "^8.1.8",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1"
   }
 }
