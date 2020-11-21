@@ -18,11 +18,12 @@
     "image_sizes": {}
   },
   "scripts": {
-    "build": "postcss src/css/screen.css -o assets/css/screen.css",
+    "build": "postcss src/**/*.css --base src --dir assets",
     "validate": "gscan ./"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.2",
+    "cssnano": "^4.1.10",
     "gscan": "^3.6.0",
     "postcss": "^8.1.8",
     "postcss-cli": "^8.3.0",
