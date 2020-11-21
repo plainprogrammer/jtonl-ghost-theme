@@ -1,4 +1,23 @@
 {
+  "name": "james-thomps-onl",
+  "description": "Ghost theme for james.thomps.onl",
+  "version": "0.1.0",
+  "keywords": ["ghost-theme"],
+  "engines": {
+    "ghost-api": "v3"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "James Thompson",
+    "email": "james@thomps.onl"
+  },
+  "config": {
+    "posts_per_page": 5,
+    "image_sizes": {}
+  },
+  "scripts": {
+    "validate": "gscan ./"
+  },
   "dependencies": {
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.8",
